@@ -1,13 +1,8 @@
 <script setup lang="ts">
-import VectorBack from '~/public/images/Vector-Back-1.svg'
-import VectorFront from '~/public/images/Vector-Front-1.svg'
-import VectorBackMd from '~/public/images/Vector-Back-1-md.svg'
-import VectorFrontMd from '~/public/images/Vector-Front-1-md.svg'
-
 const { isTablet } = useResponsiveWindowSize({})
 
-const frontSvg1 = computed(() => isTablet.value ? VectorFrontMd : VectorFront)
-const backSvg1 = computed(() => isTablet.value ? VectorBackMd : VectorBack)
+const frontSvg1 = computed(() => `/images/Vector-Front-1${isTablet.value ? '-md' : ''}.svg`)
+const backSvg1 = computed(() => `/images/Vector-Back-1${isTablet.value ? '-md' : ''}.svg`)
 </script>
 
 <template>

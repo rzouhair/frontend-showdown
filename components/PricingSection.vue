@@ -1,11 +1,6 @@
 <script setup lang="ts">
 import type { PackageProps } from '~/utils/@types';
 
-import VectorBack2 from '~/public/images/Vector-Back-2.svg'
-import VectorFront2 from '~/public/images/Vector-Front-2.svg'
-import VectorBack2Md from '~/public/images/Vector-Back-2-md.svg'
-import VectorFront2Md from '~/public/images/Vector-Front-2-md.svg'
-
 const packages: PackageProps[] = [
   {
     id: 1,
@@ -57,8 +52,8 @@ const packages: PackageProps[] = [
 
 const { isTablet } = useResponsiveWindowSize({})
 
-const frontSvg2 = computed(() => isTablet.value ? VectorFront2Md : VectorFront2)
-const backSvg2 = computed(() => isTablet.value ? VectorBack2Md : VectorBack2)
+const frontSvg2 = computed(() => `/images/Vector-Front-2${isTablet.value ? '-md' : ''}.svg`)
+const backSvg2 = computed(() => `/images/Vector-Back-2${isTablet.value ? '-md' : ''}.svg`)
 </script>
 
 <template>
