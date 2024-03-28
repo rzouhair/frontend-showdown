@@ -15,6 +15,7 @@ const sections = [
     links: [
       { label: 'Plans', to: '#' },
     ],
+    classNames: 'md:col-start-3 md:row-start-2'
   },
   {
     title: 'Connect with us',
@@ -42,12 +43,14 @@ const sections = [
       { label: 'Consulting', to: '#' },
       { label: 'Affiliate Programs', to: '#' },
     ],
+    classNames: 'md:col-start-2 md:row-start-1'
   },
   {
     title: 'Resources',
     links: [
       { label: 'Articles', to: '#' },
     ],
+    classNames: ''
   }
 ]
 
@@ -112,12 +115,13 @@ const socialMediaLinks = [
         </div>
       </div>
     </div>
-    <div class="flex flex-col md:gap-12 gap-8 md:h-[36.75rem] md:items-start items-center flex-wrap">
+    <div class="lg:flex lg:flex-col grid md:grid-cols-3 grid-cols-1 md:gap-12 gap-8 lg:h-[36.75rem] md:items-start items-center lg:flex-wrap">
       <footer-section
         v-for="section in sections"
         :key="section.title"
         :title="section.title"
         :links="section.links"
+        :class="section.classNames"
       />
     </div>
   </footer>
