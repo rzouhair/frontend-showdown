@@ -61,7 +61,7 @@ const isMenuOpen = ref(false)
         />
       </NuxtLink>
     </div>
-    <div class="xl:block hidden flex-1 ml-8">
+    <div class="xl:block hidden flex-1 min-[1368px]:ml-[3.875rem] ml-4">
       <navbar-items :links="links" />
     </div>
     <div class="hidden sm:flex items-center justify-center gap-7.5">

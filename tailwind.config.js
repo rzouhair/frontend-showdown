@@ -57,7 +57,7 @@ export default {
         '4.5xl': '2.5rem'
       },
       screens: {
-        'hero': '1100px',
+        'hero': '1190px',
         'tight': '1170px',
         'footer': '1060px'
       }

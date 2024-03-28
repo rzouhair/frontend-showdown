@@ -59,8 +59,8 @@ const backSvg2 = computed(() => isTablet.value ? VectorBack2Md : VectorBack2)
     class="
       absolute left-0 right-0 z-[1] h-[869px] bg-no-repeat bg-cover bg-top
       top-[1866px]
-      sm:top-[2554px]
-      md:top-[1796px]
+      sm:top-[2434px] sm:bg-contain
+      md:top-[1886px] md:bg-cover
     "
     :style="{
       backgroundImage: `url(${backSvg2})`,
@@ -70,8 +70,8 @@ const backSvg2 = computed(() => isTablet.value ? VectorBack2Md : VectorBack2)
     class="
       absolute right-0 z-[1] h-[610px] bg-no-repeat bg-cover bg-top
       top-[2256px] w-full
-      sm:top-[2914px] sm:left-0 sm:bg-top sm:w-[unset]
-      md:top-[2127px]
+      sm:top-[2784px] sm:bg-contain sm:left-0 sm:bg-top sm:w-[unset]
+      md:top-[2245px] md:bg-cover
     "
     :style="{
       backgroundImage: `url(${frontSvg2})`,
