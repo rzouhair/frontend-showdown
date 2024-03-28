@@ -83,7 +83,7 @@ watchDebounced(
 
     <section class="relative w-container !overflow-visible" :style="{ height: carouselWrapperHeight }">
       <ClientOnly>
-        <div class="absolute left-0 w-screen h-full" v-if="itemsToShow !== null" ref="carouselContainer">
+        <div class="absolute left-0 md:w-screen w-full h-full pl-6 pr-6 md:pr-0" v-if="itemsToShow !== null" ref="carouselContainer">
           <Carousel
             :autoplay="5000"
             :items-to-show="itemsToShow"
@@ -93,7 +93,7 @@ watchDebounced(
           >
             <template #slides>
               <Slide v-for="slide in 4" :key="slide" class="h-full">
-                <div class="px-3.5">
+                <div class="md:px-3.5">
                   <workshop-card />
                 </div>
               </Slide>
