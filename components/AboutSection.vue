@@ -1,11 +1,45 @@
 <script setup lang="ts">
+import VectorBack from '~/public/images/Vector-Back-1.svg'
+import VectorFront from '~/public/images/Vector-Front-1.svg'
+import VectorBackMd from '~/public/images/Vector-Back-1-md.svg'
+import VectorFrontMd from '~/public/images/Vector-Front-1-md.svg'
+
+const { isTablet } = useResponsiveWindowSize({})
+
+const frontSvg1 = computed(() => isTablet.value ? VectorFrontMd : VectorFront)
+const backSvg1 = computed(() => isTablet.value ? VectorBackMd : VectorBack)
 </script>
 
 <template>
   <section class="relative">
+    <div
+      v-if="backSvg1 && isTablet !== null"
+      class="
+        absolute left-0 right-0 z-[0] h-[610px] bg-no-repeat bg-cover bg-top
+        -top-[234px]
+        sm:-top-[200px]
+        md:-top-[136px]
+      "
+      :style="{
+        backgroundImage: `url(${backSvg1})`,
+      }"
+    />
+
+    <div
+      v-if="frontSvg1 && isTablet !== null"
+      class="
+        absolute right-0 z-[0] h-[918px] bg-no-repeat bg-cover
+        -top-[202px] w-full bg-[75%_top]
+        sm:-top-[168px] sm:left-0 sm:bg-top sm:w-[unset]
+        md:-top-[104.31px]
+      "
+      :style="{
+        backgroundImage: `url(${frontSvg1})`,
+      }"
+    />
     <div class="w-container">
       <app-card class="relative z-[4]">
-        <div class="grid grid-cols-1 lg:py-10 sm:grid-cols-4 lg:gap-10 gap-6 sm:items-start lg:items-center place-items-center">
+        <div class="grid grid-cols-1 lg:py-10 sm:py-4 sm:grid-cols-4 lg:gap-10 gap-6 sm:items-start lg:items-center place-items-center">
           <NuxtImg
             class="lg:w-[135px] lg:h-[152px] lg:object-cover sm:w-full w-[85px]"
             src="/images/VueSchool.png"
