@@ -1,8 +1,8 @@
 <script setup lang="ts">
 const stats = reactive([
-  { id: 1, count: 763, label: 'Video lessons', icon: '/Play.png' },
-  { id: 2, count: 40, label: 'Courses', icon: '/Clip.png' },
-  { id: 3, count: 64, label: '15 Hours', icon: '/Clock.png' },
+  { id: 1, count: 763, label: 'Video lessons', icon: '/images/Play.png' },
+  { id: 2, count: 40, label: 'Courses', icon: '/images/Clip.png' },
+  { id: 3, count: 64, label: '15 Hours', icon: '/images/Clock.png' },
 ])
 </script>
 

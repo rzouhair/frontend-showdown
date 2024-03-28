@@ -23,7 +23,7 @@ function redirectToCourse() {
 
 <template>
   <app-card>
-    <div class="pt-4 sm:px-4">
+    <div class="pt-4 sm:px-4 lg:px-0">
       <div class="flex items-center gap-4 flex-wrap">
         <NuxtImg
           :src="package.icon"
@@ -108,7 +108,7 @@ function redirectToCourse() {
             <div class="bg-primary-dark bg-opacity-20 text-base flex items-center gap-2.5 px-3.5 py-2 rounded-lg">
               <NuxtImg
                 class="min-w-5"
-                src="/Seats.svg"
+                src="/images/Seats.svg"
                 alt="Package seats icon"
                 width="18.67"
                 height="16"

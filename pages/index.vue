@@ -1,15 +1,15 @@
 <script lang="ts" setup>
 import { useWindowSize } from '@vueuse/core';
 
-import VectorBack from '~/assets/images/Vector-Back-1.svg'
-import VectorFront from '~/assets/images/Vector-Front-1.svg'
-import VectorBackMd from '~/assets/images/Vector-Back-1-md.svg'
-import VectorFrontMd from '~/assets/images/Vector-Front-1-md.svg'
+import VectorBack from '/images/Vector-Back-1.svg'
+import VectorFront from '/images/Vector-Front-1.svg'
+import VectorBackMd from '/images/Vector-Back-1-md.svg'
+import VectorFrontMd from '/images/Vector-Front-1-md.svg'
 
-import VectorBack2 from '~/assets/images/Vector-Back-2.svg'
-import VectorFront2 from '~/assets/images/Vector-Front-2.svg'
-import VectorBack2Md from '~/assets/images/Vector-Back-2-md.svg'
-import VectorFront2Md from '~/assets/images/Vector-Front-2-md.svg'
+import VectorBack2 from '/images/Vector-Back-2.svg'
+import VectorFront2 from '/images/Vector-Front-2.svg'
+import VectorBack2Md from '/images/Vector-Back-2-md.svg'
+import VectorFront2Md from '/images/Vector-Front-2-md.svg'
 
 const { width } = useWindowSize()
 

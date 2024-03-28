@@ -22,7 +22,7 @@ const borderRadius = computed(() => props.radius === 'lg' ? 'rounded-7.5' : 'rou
     <div class="gradient-card-header py-6 leading-3 text-base md:px-9 px-4 font-medium">
       <slot name="header">
         <div class="flex items-center gap-3 text-base">
-          <NuxtImg src="/Calendar.png" alt="Calendar Icon" width="18" height="20" />
+          <NuxtImg src="/images/Calendar.png" alt="Calendar Icon" width="18" height="20" />
           December 14th - 11:00 AM (GMT-3)
         </div>
       </slot>
@@ -33,11 +33,11 @@ const borderRadius = computed(() => props.radius === 'lg' ? 'rounded-7.5' : 'rou
       <div>
         <div class="flex items-center gap-9">
           <div class="flex items-center gap-2 text-white-muted">
-            <NuxtImg src="/PlayMuted.png" alt="Calendar Icon" width="18" height="18" />
+            <NuxtImg src="/images/PlayMuted.png" alt="Calendar Icon" width="18" height="18" />
             Live training
           </div>
           <div class="flex items-center gap-2 text-white-muted">
-            <NuxtImg src="/ClockMuted.png" alt="Calendar Icon" width="18" height="18" />
+            <NuxtImg src="/images/ClockMuted.png" alt="Calendar Icon" width="18" height="18" />
             15 Hours
           </div>
         </div>
@@ -46,7 +46,7 @@ const borderRadius = computed(() => props.radius === 'lg' ? 'rounded-7.5' : 'rou
           <p class="text-sm text-white-muted mt-3 md:line-clamp-3 line-clamp-4">A progressive framework for building user interfaces. Unlike other monolithic frameworks, Vue is designed from the ground up to be incrementally...</p>
         </div>
         <workshop-host :host="{
-          avatar: '/VueSchoolWorkshop.jpeg',
+          avatar: '/images/VueSchoolWorkshop.jpeg',
           fullname: 'Steve Popoola'
         }" />
       </div>

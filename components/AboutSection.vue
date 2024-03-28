@@ -8,7 +8,7 @@
         <div class="grid grid-cols-1 md:grid-cols-4 lg:gap-10 gap-6 md:items-start lg:items-center place-items-center">
           <NuxtImg
             class="lg:w-[135px] md:w-full w-[85px]"
-            src="/VueSchool.png"
+            src="/images/VueSchool.png"
             loading="lazy"
             decoding="async"
           />
@@ -23,7 +23,7 @@
           <NuxtImg
             v-for="i in 6"
             :key="i"
-            src="/Google.png"
+            src="/images/Google.png"
             width="118"
             height="40"
           />

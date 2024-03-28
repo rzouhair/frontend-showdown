@@ -12,7 +12,7 @@
     </div>
     <NuxtImg
       class="min-[1300px]:-mr-[7.5rem] relative z-[1]"
-      src="/HeroImage.svg"
+      src="/images/HeroImage.svg"
       alt="Hero section image"
       width="602"
       height="616"

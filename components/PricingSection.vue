@@ -5,7 +5,7 @@ const packages: PackageProps[] = [
   {
     id: 1,
     title: 'Basic',
-    icon: '/Leaf.png',
+    icon: '/images/Leaf.png',
     pricePerSeat: 50,
     features: [
       { id: 1, text: 'All Video Courses ', included: true },
@@ -19,7 +19,7 @@ const packages: PackageProps[] = [
   {
     id: 2,
     title: 'Professional',
-    icon: '/Rocket.png',
+    icon: '/images/Rocket.png',
     pricePerSeat: 50,
     features: [
       { id: 1, text: 'All Video Courses ', included: true },
@@ -29,7 +29,7 @@ const packages: PackageProps[] = [
       { id: 5, text: '1 x ws ticket per license', included: true, highlighted: true },
     ],
     suggestedCourse: {
-      thumbnail: '/Masterclass.png',
+      thumbnail: '/images/Masterclass.png',
       title: 'The Vue 3 Masterclass'
     },
     link: 'https://www.vueschool.io/'
@@ -37,7 +37,7 @@ const packages: PackageProps[] = [
   {
     id: 3,
     title: 'Basic',
-    icon: '/Leaf.png',
+    icon: '/images/Leaf.png',
     pricePerSeat: 50,
     features: [
       { id: 1, text: 'All Video Courses ', included: true },

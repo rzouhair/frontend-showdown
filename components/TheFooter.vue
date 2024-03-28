@@ -53,27 +53,27 @@ const sections = [
 
 const socialMediaLinks = [
   {
-    icon: '/Facebook.png',
+    icon: '/images/Facebook.png',
     link: 'https://www.facebook.com',
     alt: 'Facebook'
   },
   {
-    icon: '/Twitter.png',
+    icon: '/images/Twitter.png',
     link: 'https://www.twitter.com',
     alt: 'Twitter'
   },
   {
-    icon: '/Github.png',
+    icon: '/images/Github.png',
     link: 'https://www.github.com',
     alt: 'Github'
   },
   {
-    icon: '/Linkedin.png',
+    icon: '/images/Linkedin.png',
     link: 'https://www.linkedin.com',
     alt: 'Linkedin'
   },
   {
-    icon: '/Youtube.png',
+    icon: '/images/Youtube.png',
     link: 'https://www.youtube.com',
     alt: 'Youtube'
   },
@@ -85,7 +85,7 @@ const socialMediaLinks = [
   <footer class="grid md:gap-16 gap-10 w-container footer:grid-cols-2 mb-35">
     <div class="tight:pr-20 pr-0 flex flex-col items-center footer:items-start">
       <NuxtImg
-        src="/logo.svg"
+        src="/images/logo.svg"
         alt="Vue School"
         width="268"
         height="88"

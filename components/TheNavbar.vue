@@ -44,7 +44,7 @@ const isMenuOpen = ref(false)
     <div class="flex items-center justify-start gap-6">
       <button class="xl:hidden" @click="isMenuOpen = true">
         <NuxtImg
-          src="/BurgerMenuIcon.svg"
+          src="/images/BurgerMenuIcon.svg"
           alt="Burger menu button"
           width="26"
           height="24"
@@ -52,7 +52,7 @@ const isMenuOpen = ref(false)
       </button>
       <NuxtLink to="/" class="flex-1">
         <NuxtImg
-          src="/logo.svg"
+          src="/images/logo.svg"
           alt="Vue School"
           width="170"
           height="56"
@@ -73,7 +73,7 @@ const isMenuOpen = ref(false)
     <nav v-if="isMenuOpen" class="fixed top-0 w-full py-4 h-full z-50 bg-primary left-0">
       <div class="px-8 mb-12 flex items-center justify-between">
         <NuxtImg
-          src="/logo.svg"
+          src="/images/logo.svg"
           alt="Vue School"
           width="170"
           height="56"

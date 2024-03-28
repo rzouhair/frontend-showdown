@@ -10,10 +10,10 @@ const props = defineProps({
 })
 
 const bulletPointIcon = computed(() => (props.included ? {
-  src: '/Check.png',
+  src: '/images/Check.png',
   alt: 'Bullet point included icon'
 } : {
-  src: 'Cross.png',
+  src: '/images/Cross.png',
   alt: 'Bullet point excluded icon'
 }))
 </script>
@@ -33,7 +33,7 @@ const bulletPointIcon = computed(() => (props.included ? {
     <app-tooltip content="Some content">
       <NuxtImg
         v-if="included"
-        src="/InfoBullet.png"
+        src="/images/InfoBullet.png"
         alt="Info bullet icon"
         width="14"
         height="14"
