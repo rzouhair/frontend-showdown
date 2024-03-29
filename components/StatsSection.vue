@@ -1,8 +1,12 @@
 <script setup lang="ts">
-const stats = reactive([
-  { id: 1, count: 763, label: 'Video lessons', icon: '/images/Play.png' },
-  { id: 2, count: 40, label: 'Courses', icon: '/images/Clip.png' },
-  { id: 3, count: 64, label: '15 Hours', icon: '/images/Clock.png' },
+const { homeData } = useVueSchool()
+
+const lessonsAndCourses = computed(() => homeData.value.lessonsAndCourses)
+
+const stats = computed(() => [
+  { id: 1, count: lessonsAndCourses.value?.videos || 0, label: 'Video lessons', icon: '/images/Play.png' },
+  { id: 2, count: lessonsAndCourses.value?.courses || 0, label: 'Courses', icon: '/images/Clip.png' },
+  { id: 3, count: lessonsAndCourses.value?.hours || 0, label: 'Hours', icon: '/images/Clock.png' },
 ])
 </script>
 

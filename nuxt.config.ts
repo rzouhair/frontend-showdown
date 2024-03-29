@@ -10,6 +10,7 @@ export default defineNuxtConfig({
   },
   modules: [
     '@nuxt/image',
+    '@nuxtjs/sanity',
     ['@nuxtjs/google-fonts', {
       families: {
         Rubik: [400, 500, 700, 800]
@@ -17,6 +18,10 @@ export default defineNuxtConfig({
       preconnect: true
     }]
   ],
+  sanity: {
+    projectId: process.env.NUXT_SANITY_PROJECT_ID,
+    dataset: process.env.NUXT_SANITY_DATASET,
+  },
   image: {
     screens: {
       'xs': 320,

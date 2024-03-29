@@ -1,4 +1,9 @@
 <script lang="ts" setup>
+const vueSchool = useVueSchool()
+
+await useAsyncData('home_data_plans', async () => {
+  await Promise.all([vueSchool.getHomeData(), vueSchool.getPlans()])
+})
 </script>
 
 <template>
