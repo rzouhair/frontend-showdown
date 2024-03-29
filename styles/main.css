@@ -1,0 +1,107 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --color-primary: 33, 36, 53;
+    --color-primary-muted: 43, 47, 68; /* 0.9 opacity */
+    --color-primary-dark: 14, 14, 16;
+
+    --color-white: 255, 255, 255;
+  
+    --color-text-white: 255, 255, 255;
+    --color-text-white-light: 243, 245, 255;
+    --color-text-white-muted: 115, 123, 152;
+  
+    --color-accent: 11, 216, 143;
+
+    --color-grey: 160, 168, 195;
+    --color-grey-2: 115, 123, 152;
+
+    --gradient-accent-start: var(--color-accent);
+    --gradient-accent-end: 0, 194, 255;
+
+    --gradient-cards-start: 79, 8, 230; /* 0.5 opacity */
+    --gradient-cards-end: 255, 73, 117; /* 0.5 opacity default */
+
+    --gradient-background: linear-gradient(90deg, rgba(var(--gradient-accent-start), 1) 0%, rgba(var(--gradient-accent-end), 1) 96.56%);
+
+    --gradient-cards: linear-gradient(90deg, rgba(var(--gradient-cards-start), 0.5) 0%, rgba(var(--gradient-cards-end), 0.5) 96.56%);
+  }
+}
+
+.heading-1 {
+  @apply font-rubik text-4.5xl leading-none font-bold;
+  @media (min-width: 640px) {
+    font-size: 3.75rem/* 60px */;
+    line-height: 1.15;
+  }
+}
+
+.heading-2 {
+  @apply font-rubik text-2xl leading-none font-bold;
+  @media (min-width: 640px) {
+    font-size: 2.5rem;
+    line-height: 1.15;
+  }
+}
+
+.heading-3 {
+  @apply font-rubik text-base font-semibold;
+  @media (min-width: 640px) {
+    font-size: 1.5rem/* 24px */;
+    line-height: 2rem/* 32px */;
+  }
+}
+
+p {
+  @apply font-rubik text-sm;
+  @media (min-width: 640px) {
+    font-size: 1.375rem;
+    line-height: 1.5;
+  }
+}
+
+@layer utilities {
+  .gradient-accent{
+    background: var(--gradient-background)
+  }
+  .text-gradient-accent {
+    @apply text-accent border-accent bg-gradient-to-r from-gradient-accent-start to-gradient-accent-end text-transparent bg-clip-text;
+  }
+  .gradient-card-header{
+    background: var(--gradient-cards)
+  }
+
+  .w-container {
+    @apply mx-auto w-full max-w-[75.125rem] px-4;
+    @media (min-width: 640px) {
+      max-width: 79.125rem;
+      padding-left: 2.5rem;
+      padding-right: 2.5rem;
+    }
+  }
+}
+
+body {
+  @apply antialiased bg-primary text-white text-base font-rubik;
+}
+
+.border-card {
+  position: relative;
+}
+.border-card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 30px; 
+  padding: 1px; 
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.2) -0.02%, rgba(255, 255, 255, 0) 53.02%);
+
+  -webkit-mask: 
+     linear-gradient(#fff 0 0) content-box, 
+     linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+          mask-composite: exclude; 
+}
