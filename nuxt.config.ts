@@ -13,7 +13,8 @@ export default defineNuxtConfig({
     ['@nuxtjs/google-fonts', {
       families: {
         Rubik: [400, 500, 700, 800]
-      }
+      },
+      preconnect: true
     }]
   ],
   image: {

@@ -93,7 +93,7 @@ watchDebounced(
           >
             <template #slides>
               <Slide v-for="slide in 4" :key="slide" class="h-full">
-                <div class="md:px-3.5">
+                <div class="sm:px-3.5">
                   <workshop-card />
                 </div>
               </Slide>

@@ -12,13 +12,12 @@
     </div>
     <NuxtImg
       class="min-[1300px]:-mr-[7.5rem] relative z-10"
-      src="/images/HeroImage.svg"
+      src="/images/HeroImage.png"
       alt="Hero section image"
       width="602"
       height="616"
-      sizes="100vw sm:50vw md:400px"opacity
-      decoding="async"
-      loading="lazy"
+      format="webp"
+      fetchpriority="high"
     />
   </section>
 </template>

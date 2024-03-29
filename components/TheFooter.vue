@@ -85,7 +85,7 @@ const socialMediaLinks = [
 </script>
 
 <template>
-  <footer class="grid md:gap-16 gap-10 w-container footer:grid-cols-2 mb-35">
+  <footer class="grid md:gap-16 gap-10 w-container footer:grid-cols-2 mb-35" aria-label="Footer">
     <div class="tight:pr-20 pr-0 flex flex-col items-center footer:items-start">
       <NuxtImg
         src="/images/logo.svg"

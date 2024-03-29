@@ -38,6 +38,7 @@ const backSvg1 = computed(() => `/images/Vector-Back-1${isTablet.value ? '-md' :
           <NuxtImg
             class="lg:w-[135px] lg:h-[152px] lg:object-cover sm:w-full w-[85px]"
             src="/images/VueSchool.png"
+            alt="Vue school Logo"
             loading="lazy"
             height="135"
             width="152"
@@ -51,13 +52,15 @@ const backSvg1 = computed(() => `/images/Vector-Back-1${isTablet.value ? '-md' :
       </app-card>
       <section class="hidden lg:block w-full mt-16 z-10">
         <app-scroller :stop-on-hover="true" speed="slow" mask>
-          <NuxtImg
-            v-for="i in 6"
-            :key="i"
-            src="/images/Google.png"
-            width="118"
-            height="40"
-          />
+          <li v-for="i in 6">
+            <NuxtImg
+              :key="i"
+              src="/images/Google.png"
+              alt="Google Logo"
+              width="118"
+              height="40"
+            />
+          </li>
         </app-scroller>
       </section>
     </div>

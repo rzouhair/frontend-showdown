@@ -40,7 +40,7 @@ const isMenuOpen = ref(false)
 </script>
 
 <template>
-  <nav class="flex items-center gap-4 justify-between w-full mx-auto px-6 sm:px-12 py-5">
+  <nav class="flex items-center gap-4 justify-between w-full mx-auto px-6 sm:px-12 py-5" aria-label="Vueschool site navigation" role="navigation">
     <div class="flex items-center justify-start gap-6">
       <button class="xl:hidden" @click="isMenuOpen = true">
         <NuxtImg
