@@ -36,6 +36,9 @@ NUXT_SANITY_DATASET=production
 4- Open `http://localhost:3000`
 
 ### Setting up a new project
+
+All steps mentioned below can be found applied in this [repository](https://github.com/rzouhair/frontend-showdown-sanity)
+
 1- Follow [this guide](https://www.sanity.io/docs/installation) to create a new project and run it locally
 
 2- Copy the newly created project's information into the nuxt project's `.env` file:
@@ -147,6 +150,8 @@ ddGd4@qEv5M3s4-
 
 ### Home Page data (Hero section and Courses Stats):
 
+[Example video](https://drive.google.com/file/d/1lTxVyZT6tjFRyY7wvDX4khNEXYD5f70S/view?usp=sharing)
+
 Go to Sanity's Studio -> Landing Page content, and create a new record
 
 #### Please note that only one record will be used in the landing page
@@ -161,9 +166,13 @@ You fill in the hero section's paragraph and CTA button text
 
 And change the stats' section data (Courses, Videos, and total hours count)
 
+And finally click on the Publish button on the bottom right of your screen
+
 <img width="687" alt="image" src="https://github.com/rzouhair/frontend-showdown/assets/66704928/c51e3759-3ca6-4451-b823-347e43d4b332">
 
 ### Pricing section (Plans)
+
+[Example video](https://drive.google.com/file/d/1GbuYEyfLk6qc5mTIq2KMyeXytkkch6B2/view?usp=sharing)
 
 The plans section is as well pretty straightforward, you create the plans by filling in the form:
 
@@ -171,6 +180,7 @@ The plans section is as well pretty straightforward, you create the plans by fil
 
 <img width="666" alt="image" src="https://github.com/rzouhair/frontend-showdown/assets/66704928/8ef32a3e-4aaa-4d0f-830c-ffc172e77290">
 
+And finally click on the Publish button on the bottom right of your screen
 
 ## Development Server
 
