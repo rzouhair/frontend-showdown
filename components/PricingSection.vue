@@ -35,10 +35,10 @@ const backSvg2 = computed(() => `/images/Vector-Back-2${isTablet.value ? '-md' :
       }"
     />
     <section class="w-container relative z-10">
-      <h2 class="heading-1 max-w-screen-md text-center self-center w-full mx-auto md:mb-30 mb-14">
+      <h2 id="discounted-bundles" class="heading-1 max-w-screen-md text-center self-center w-full mx-auto md:mb-30 mb-14">
         Discounted <span class="text-gradient-accent">Corporate Training</span> Bundles
       </h2>
-      <div v-if="plans?.length" class="grid grid-cols-1 gap-6 min-[1230px]:grid-cols-3 min-[1230px]:gap-7.5">
+      <div v-if="plans?.length" aria-labelledby="discounted-bundles" class="grid grid-cols-1 gap-6 min-[1230px]:grid-cols-3 min-[1230px]:gap-7.5">
         <pricing-card
           v-for="plan in plans"
           :key="plan.id"

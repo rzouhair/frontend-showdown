@@ -24,6 +24,7 @@ const openParent = ref<string | null>(null)
       </NuxtLink>
       <button
         v-else
+        aria-haspopup="menu"
         class="hover:text-accent transition-colors text-white text-xl flex items-center gap-2 cursor-pointer"
         @click="openParent = openParent !== link.title ? link.title : null"
       >

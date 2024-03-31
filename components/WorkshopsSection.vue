@@ -71,7 +71,7 @@ watchDebounced(
 <template>
   <section class="overflow-hidden">
     <div class="w-container flex items-center justify-between lg:text-left text-center mb-[4.5rem] flex-col lg:flex-row">
-      <h2 class="heading-1 w-full">
+      <h2 id="available-workshops" class="heading-1 w-full">
         Available Workshops
       </h2>
       <Teleport v-if="isTablet !== null" :disabled="isTablet === false" to="#workshop-button-teleport">
@@ -81,7 +81,7 @@ watchDebounced(
       </Teleport>
     </div>
 
-    <section class="relative w-container !overflow-visible" :style="{ height: carouselWrapperHeight }">
+    <section aria-label="Workshops cards carousel" aria-labelledby="available-workshops" class="relative w-container !overflow-visible" :style="{ height: carouselWrapperHeight }">
       <ClientOnly>
         <div class="absolute left-0 md:w-screen w-full h-full pl-6 pr-6 md:pr-0" v-if="itemsToShow !== null" ref="carouselContainer">
           <Carousel

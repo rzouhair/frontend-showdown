@@ -45,8 +45,8 @@ const backSvg1 = computed(() => `/images/Vector-Back-1${isTablet.value ? '-md' :
             decoding="async"
           />
           <div class="md:mt-2 flex flex-col gap-4 text-center sm:col-span-3 sm:text-left">
-            <h2 class="heading-2">About Vue School corporate training</h2>
-            <p class="lg:pr-15">School is the #1 training resource for Vue.js and has provided the most comprehensive Vue.js video library in the world to over 140,000 developers. Private individuals and small to enterprise companies have used our services to develop their skills since 2016.</p>
+            <h2 id="about-section" class="heading-2">About Vue School corporate training</h2>
+            <p class="lg:pr-15" aria-labelledby="about-section">School is the #1 training resource for Vue.js and has provided the most comprehensive Vue.js video library in the world to over 140,000 developers. Private individuals and small to enterprise companies have used our services to develop their skills since 2016.</p>
           </div>
         </div>
       </app-card>

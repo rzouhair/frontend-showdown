@@ -19,9 +19,9 @@ const vClickOutside = {
 
 <template>
   <div class="relative" @click="isOpen = !isOpen" v-click-outside="() => isOpen = false">
-    <div class="select-none">
+    <button aria-label="Dropdown trigger" class="select-none">
       <slot name="trigger" :is-open="isOpen"></slot>
-    </div>
+    </button>
     <div :class="{ 'hidden': !isOpen }" class="absolute top-full z-20 mt-2 overflow-hidden origin-top bg-primary-dark shadow-lg">
       <slot name="content" :is-open="isOpen" />
     </div>

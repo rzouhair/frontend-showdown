@@ -37,6 +37,7 @@ const bulletPointIcon = computed(() => (props.included ? {
         alt="Info bullet icon"
         width="14"
         height="14"
+        aria-haspopup="true"
       />
     </app-tooltip>
   </div>

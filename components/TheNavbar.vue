@@ -81,7 +81,7 @@ const isMenuOpen = ref(false)
           loading="lazy"
         />
 
-        <button @click="isMenuOpen = false">
+        <button aria-label="Close" @click="isMenuOpen = false">
           Close [X]
         </button>
       </div>
